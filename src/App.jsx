@@ -1,7 +1,7 @@
 import "./app.scss";
 import Dock from "./components/Dock";
 import Nav from "./components/Nav";
-import MacWindow from "./components/windows/MacWindow";
+import Github from "./components/windows/Github";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Nav />
       <Dock />
 
-      <MacWindow />
+      <Github />
     </main>
   );
 }
