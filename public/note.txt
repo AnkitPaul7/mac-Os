@@ -1,7 +1,7 @@
 /**
- * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @file: ankit.profile.config.ts
+ * @author: Ankit Paul
+ * @summary: Full-stack developer specializing in AI-powered applications and scalable systems.
  */
 
 // --------------------------------------------------
@@ -10,96 +10,110 @@
 
 const TECH_STACK = {
   frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
+    "React.js",     // 95%
+    "Next.js",      // 90%
+    "TailwindCSS",  // 85%
+    "Three.js",     // 60% (Working knowledge)
   ],
   backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+    "Node.js",      // 90%
+    "Express.js",   // 90%
+    "REST APIs",    // 95%
+    "PostgreSQL",   // 70% (Familiar)
+    "Redis",        // 60% (Basic usage)
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+  databases: [
+    "MongoDB",      // 90%
+    "MySQL",        // 80%
+  ],
+  ai_engineering: [
+    "OpenAI GPT-4o/5",    // 90%
+    "Prompt Engineering", // 95%
+    "JSON Structuring",   // 95%
+    "Data Extraction",    // 90%
+    "LLM Integration",    // 90%
+    "Evaluation Logic",   // 85%
+  ],
+  tools: [
+    "Git",
+    "Docker (Basic)", // 60%
+    "AWS (Familiar)", // 20-30%
+    "Figma",          // 70%
+    "Linux",          // 35%
+    "Axios",
+    "Cheerio",
+  ]
 };
 
 // --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
+// 2. EXPERIENCE LOG
 // --------------------------------------------------
 
 class ProfessionalHistory {
-  
+
   /** * CURRENT ROLE
-   * @period 2023 - Present 
+   * @period Nov 2024 - Present
    */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
-  }
+  public async TachoMind(): Promise<Impact> {
+    const role = "Junior Software Developer";
 
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
-   */
-  public PixelPerfect_Studios(): void {
-    this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
-    
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
+    const aiFeatures = [
+      "Brand Extraction Engine",
+      "Caption Generation",
+      "Social Inbox Integration",
+      "Media Gallery"
+    ];
+
+    const backendSystems = [
+      "Brand APIs",
+      "Workspace Management",
+      "Post Topic Engine"
+    ];
+
+    const scraping = this.buildPipeline({
+      tools: ["Cheerio", "Axios"],
+      output: "Structured Data"
+    });
+
+    const improvements = [
+      "Custom error handling system",
+      "Optimized media import pipelines",
+      "Refactored backend modules"
+    ];
+
+    return { role, aiFeatures, backendSystems, scraping, improvements };
   }
 }
 
 // --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
+// 3. PROJECTS
 // --------------------------------------------------
 
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
-}
-
-const trophyCabinet: HackathonWin[] = [
+const projects = [
   {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
+    name: "MacOS Web Replica",
+    stack: ["React.js", "UI Engineering"],
+    highlight: "Simulated macOS UI with interactive components and smooth UX"
   },
   {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
+    name: "AI Brand Intelligence System",
+    stack: ["Node.js", "OpenAI APIs", "MongoDB"],
+    highlight: "Transforms unstructured data into structured brand insights"
   }
 ];
 
 // --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
+// TERMINAL OUTPUT
 // --------------------------------------------------
 
-const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
-]);
+/*
+$ ankit --status
 
-export default new ProfessionalHistory();
+> Role: Full-Stack Developer (AI + MERN)
+> Skills: React | Node | AI | LLM Integration
+> Location: India / Remote
+> Status: Open to Opportunities 🚀
 
-
-```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
+> Loading Stack... [||||||||||] 100%
 > Ready.
-```
+*/
