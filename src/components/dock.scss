@@ -15,6 +15,7 @@
     backdrop-filter: blur(5px);
 
     .icon{
+        position: relative;
         padding: 0.65rem;
         border-radius: 0.5rem;
         display: flex;
@@ -25,6 +26,18 @@
         width: 3.75rem;
 
         transition: all 0.2s linear;
+
+        &.active::after{
+            content: "";
+            position: absolute;
+            bottom: -0.55rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: white;
+        }
     }
 
     .github,

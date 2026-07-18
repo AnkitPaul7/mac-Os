@@ -8,7 +8,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
         onClick={() => {
           setWindowsState((state) => ({ ...state, github: true }));
         }}
-        className="icon github"
+        className={`icon github ${windowsState.github ? "active" : ""}`}
       >
         <img src="/doc-icons/github.svg" alt="" />
       </div>
@@ -16,7 +16,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
         onClick={() => {
           setWindowsState((state) => ({ ...state, note: true }));
         }}
-        className="icon note"
+        className={`icon note ${windowsState.note ? "active" : ""}`}
       >
         <img src="/doc-icons/note.svg" alt="" />
       </div>
@@ -24,7 +24,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
         onClick={() => {
           setWindowsState((state) => ({ ...state, resume: true }));
         }}
-        className="icon pdf"
+        className={`icon pdf ${windowsState.resume ? "active" : ""}`}
       >
         <img src="/doc-icons/pdf.svg" alt="" />
       </div>
@@ -40,13 +40,13 @@ const Dock = ({ windowsState, setWindowsState }) => {
         onClick={() => {
           setWindowsState((state) => ({ ...state, spotify: true }));
         }}
-        className="icon spotify"
+        className={`icon spotify ${windowsState.spotify ? "active" : ""}`}
       >
         <img src="/doc-icons/spotify.svg" alt="" />
       </div>
       <div
         onClick={() => {
-          window.open("mailto:ankit44@gmail.com", "_blank");
+          window.open("mailto:paulankit44@gmail.com", "_blank");
         }}
         className="icon mail"
       >
@@ -67,7 +67,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
         onClick={() => {
           setWindowsState((state) => ({ ...state, cli: true }));
         }}
-        className="icon cli"
+        className={`icon cli ${windowsState.cli ? "active" : ""}`}
       >
         <img src="/doc-icons/cli.svg" alt="" />
       </div>
