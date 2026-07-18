@@ -11,7 +11,7 @@ This project aims to recreate the macOS desktop experience in the browser — in
 - React
 - Vite
 - JavaScript
-- CSS (or Tailwind if you add later)
+- CSS
 
 ---
 

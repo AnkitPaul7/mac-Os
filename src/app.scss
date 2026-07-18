@@ -9,7 +9,6 @@ body,
 #root {
   height: 100%;
   width: 100%;
-  background-color: black;
 }
 
 main {
@@ -20,4 +19,11 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
 }
